@@ -35,6 +35,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Puma as the app server
 gem 'puma', '~> 2.15.3'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular', '~> 1.4.9'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 8.2.1'
