@@ -2,3 +2,21 @@
 <p>Find me in app/views/pages/welcome.html.erb</p>
 <p>This is Dennise testing</p>
 <p>This is Chloe testing</p>
+
+<div ng-app="app">
+  <div ng-controller="questionsCtrl" ng-init="setup()">
+
+    <div ng-show="question === 'question01'">
+      <p>
+        Have you or your family members experienced domestic abuse on behalf of your spouse? Domestic abuse can range from physical abuse to emotional abuse. Domestic abuse also includes serious financial control, where you have no control over family finances and the filing of tax returns.
+      </p>
+    </div>
+
+    <div ng-show="question === 'question02'">
+      <p>Did you and your spouse file joint tax returns?</p>
+    </div>
+
+    <button ng-click="changeQuestion('question02')">Yes</button>
+
+  </div>
+</div>
